@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>tintin`s blog</title>
+	<head>
+	<body>
+		<div>
+			<h1><a href="/">tintin`s blog</a></h>
+		</div>
+
+		{% for post in  posts %}
+			<div>
+				<p>published:{{ post.published_date }}</p>
+				<h2><a href="">{{ post.tile }}</a></h2>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+		{% endfor %}
+
+		<div>
+			<p>published:2022-04-05</p>
+			<h2><a href="">My first post</a></h2>
+			<p>I`m a Perfect Human! Hello!</p>
+		</div>
+
+		<div>
+			<p>open:2022-04-05</p>
+			<h2><a href="">second post</a></h2>
+			<p>hello hello!</p>
+		</div>
+			<p>Hi there!</p>
+			<p>It works!</p>
+	</body>
+</html>
